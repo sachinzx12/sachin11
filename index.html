@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Calculator</title>
-  <link rel="stylesheet" href="calc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" readonly>
-    <div class="buttons">
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('/')">÷</button>
-    <br>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('*')">×</button>
-    <br>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('-')">−</button>
-    <br>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="appendToDisplay('+')">+</button>
-    
-      <button class="equal" onclick="calculate()">=</button>
+    <div>
+    <h1><u><b>Student Admission Form</b></u></h1>
+    <lable>Fullname :</lable>
+    <input type="text" id="Fullname :" placeholder="enter your Fullname" class="Fullname" value=""required>
+    <p class="hidden" id="hidden Fullname">enter proper name</p>
+    </div><br>
+    <div>
+        <lable>Fathername :</lable>
+    <input type="text" id="Fathername :" placeholder="enter your Fathername" class="Father" value=""required>
+    <p class="hidden" id="hidden Fathername">enter proper Fathername</p>
+    </div><br>
+    <div>
+        <lable>Mothername :</lable>
+    <input type="text" id="Mothername :" placeholder="enter your Mothername" class="Mother" value=""required>
+    <p class="hidden" id="hidden Mothername">enter proper Mothername</p>
+    </div><br>
+    <div>
+        <lable>Age :</lable>
+    <input type="number" id="Age" placeholder="enter your Age" class="Age" value=""required>
+    <p class="hidden" id="hidden Age">enter proper Age</p>
+    </div><br>
+    <div>
+         <lable>Dob :</lable>
+    <input type="date" id="Dob" placeholder="enter your Dob" class="Dob" value=""required>
+    <p class="hidden" id="hidden Dob">enter proper Dob</p>
     </div>
-  </div>
-  <script src="calc.js"></script>
+    <div>
+         <p>Gender :</p>
+    <input type="radio" id="male" name="Gender" value=""required>
+    <lable for="male">male</lable><br>
+    <input type="radio" id="female" name="Gender" value=""required>
+    <lable for="female">female</lable><br>
+    <input type="radio" id="others" name="Gender" value=""required>
+    <lable for="others">others</lable><br>
+    <div>
+        <br>
+     <lable>Address :</lable>
+    <input type="text" id="Address" placeholder="enter your Address" class="Address" value=""required>
+    <p class="hidden" id="hidden Address">enter proper Address</p>
+    </div>
+    <br>
+    <div>
+         <lable>Email :</lable>
+    <input type="text" id="Email" placeholder="enter your Email" class="Email" value=""required>
+    <p class="hidden" id="hidden Email">enter proper Email</p>
+    </div><br>
+    <div>
+         <lable>phno :</lable>
+    <input type="number" id="phno" placeholder="enter your phno" class="phno" value=""required>
+    <p class="hidden" id="hidden phno">enter proper phno</p>
+    </div>
+    <div>
+        <p>Course :</p>
+        <input type="checkbox" id="CS" value=""required>
+        <label>CS</label><br>
+        <input type="checkbox" id="EC" value=""required>
+        <label>EC</label><br>
+        <input type="checkbox" id="ME" value=""required>
+        <label>ME</label><br>
+        <input type="checkbox" id="CE" value=""required>
+        <label>CE</label><br>
+    </div><br>
+    <div>
+        <lable>ITI percentage</lable>
+        <input type="text" id="" placeholder="enter percentage" value=""required><br><br>
+         <lable>10th percentage</lable>
+        <input type="text" id="" placeholder="enter percentage" value=""required><br><br>
+         <lable>pu percentage</lable>
+        <input type="text" id="" placeholder="enter percentage" value=""required><br><br>
+    </div><br>
+    <div>
+        <lable>bloodgroup :</lable>
+    <input type="text" id="bloodgroup :" placeholder="enter your bloodgroup" class="bloodgroup" value=""required>
+    <p class="hidden" id="hidden bloodgroup">enter proper bloodgroup</p>
+    </div><br>
+    <button id="submit" onclick="submit()">submit</button>
+        <script src="script.js"></script>
+    </div>
+
+
+
 </body>
 </html>
